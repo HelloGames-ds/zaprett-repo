@@ -45,3 +45,4 @@ cobalt.tools
 api.cobalt.tools
 sndcdn.com
 sunny.imput.net
+umamusume.com
