@@ -40,3 +40,8 @@ z.stakean.xyz
 mailru.proItch.io
 github.com
 aur.archlinux.org
+a-v2.sndcdn.com
+cobalt.tools
+api.cobalt.tools
+sndcdn.com
+sunny.imput.net
