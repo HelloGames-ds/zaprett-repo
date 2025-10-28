@@ -123,7 +123,7 @@
     "name": "strategy-shizapret-port.txt",
     "author": "sch-izo (Портировал dotFelixan)",
     "description": "Стратегия shizapret из репозитория sch-izo/shizapret для Windows",
-    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "hash": "505f05ff09373438a747e4906ff31eafcf764b392b9106e95d4458f3a26a2b74",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
   },
