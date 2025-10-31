@@ -443,7 +443,7 @@
     "name": "strategy-ultimatefix.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "722809bb0b741e66e0cac554a41028d025b1463c4e0957b626772bedfed30c12",
+    "hash": "531b72cc96c1f09094b77ba73df029188f69bd6354d5ea3a3695620389d8e736",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-ultimatefix.txt"
   },
@@ -451,7 +451,7 @@
     "name": "strategy-youtubefix-alt.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "efd59bb314d61742420c64420beec510808be747e08740f492e9c5cedb37ea28",
+    "hash": "58b5dc17680bc27935a455bc8d662dd38fb05d8a3d78457714470902ca456798",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-youtubefix-alt.txt"
   }
