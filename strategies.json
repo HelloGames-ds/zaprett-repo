@@ -139,7 +139,7 @@
     "name": "strategy-discord-fix.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "37d918a735b94d3b573eda6adced550fc938053bff5405f563b62282e8952864",
+    "hash": "7a23d47ceef03e74c5363bd6f2b437ae69540b90f39075ae22bb66eaffbfe438",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-discord-fix.txt"
   },
@@ -147,7 +147,7 @@
     "name": "strategy-discord.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "7289ab043ff608c1440c57e34885e5337175d913d09d05c3e917ff824991204b",
+    "hash": "aa5537679a8d0f949fc4f3deea9f4d38983ec3e39f4b3cc16fa8632b8f96f4f1",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-discord.txt"
   },
@@ -155,7 +155,7 @@
     "name": "strategy-discordfix-alt.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "2f1194add08ce5f462ee0b6ab6693b204d9703efccbe20c7183b10096b3245c1",
+    "hash": "6e44642827eafdf60060cf5d91bad15ab62cb2c2e3e7b740ecdadd7b4333223d",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-discordfix-alt.txt"
   },
