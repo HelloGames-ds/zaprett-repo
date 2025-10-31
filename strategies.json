@@ -427,7 +427,7 @@
     "name": "strategy-ultimatefix-universal-v3.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "f84130ae467bbfa6ecb8dcea678ac71dfa6b9b876c6d1c32efcb77a1007909cd",
+    "hash": "32994051af48a3af46606295f19783cb71897ea27685a587c006aa01384606eb",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-ultimatefix-universal-v3.txt"
   },
