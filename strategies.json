@@ -195,7 +195,7 @@
     "name": "strategy-fix-v3.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "eaeb87866eefd291302743682f2f211bfae861214bad4e206b986ac1f7e647d2",
+    "hash": "88e2b596d41cabc3ff4eb568f1e11fc5a2a30d6cf99aa5a23fc830b48906c7fd",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-fix-v3.txt"
   },
