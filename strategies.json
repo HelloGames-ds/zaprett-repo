@@ -411,7 +411,7 @@
     "name": "strategy-ultimatefix-mgts.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "fcc8eb2b6cea4f2463fc49e79b82238b922015feb1289f259d4dd96678c317de",
+    "hash": "d01561d70c71fee6498b1b3075f63af726baba04210a645002bba891df7bc545",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-ultimatefix-mgts.txt"
   },
