@@ -251,7 +251,7 @@
     "name": "strategy-general-old.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "f3c413f9080b2c31ad9ec521b23349f46086dd09f96e4dc64e25509e248f353d",
+    "hash": "c217e3685014055fae6c12d42cb6ccfd5b6cd5916e44c8646c9f9a4052928540",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-general-old.txt"
   },
