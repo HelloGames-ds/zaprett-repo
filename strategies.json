@@ -155,7 +155,7 @@
     "name": "strategy-discordfix-alt.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "6e44642827eafdf60060cf5d91bad15ab62cb2c2e3e7b740ecdadd7b4333223d",
+    "hash": "3b5647a22fe5a6e8df7d98f60791567ab46e18fad2a06d00971c64de7edf1d44",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-discordfix-alt.txt"
   },
