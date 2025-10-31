@@ -283,7 +283,7 @@
     "name": "strategy-generalfix-alt3.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "22f3253612a69ddae4cdf2941cc45ef60200f88521f287a2ba08920dc57eb58b",
+    "hash": "2d8eb505e9d14a91d5bba1fdf1a0199b7347f7a2e37787c7385659a84428d54d",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-generalfix-alt3.txt"
   },
@@ -291,7 +291,7 @@
     "name": "strategy-generalfix-alt4.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "d89009ab1c2b9e63ab06081e4a005a5a376c4541f511fc4f2560f889f5d78fe5",
+    "hash": "c0eb63c7141039971563526e24a65969e0f57cbc2a010998baf03f95cd3e9031",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-generalfix-alt4.txt"
   },
