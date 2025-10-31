@@ -203,7 +203,7 @@
     "name": "strategy-general-fake-tls-auto-alt-2.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "c548ef8c583abff992724f39e802009c78471928f4446276d36b06bf5f297b06",
+    "hash": "57727dc3959142a8bb5484b45e3ed2457a243ca9e4a70fdd90a083e1ffd943bf",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-general-fake-tls-auto-alt-2.txt"
   },
