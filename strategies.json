@@ -235,7 +235,7 @@
     "name": "strategy-general-mgts.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "a42cb2d60dddd4937c65ac59586b3782fff7e493e772e322942b8d5496747052",
+    "hash": "7b5b6a2829d58ad0e23734b544b4a99d66129e59ae5b7d483190ac6570fd7599",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-general-mgts.txt"
   },
