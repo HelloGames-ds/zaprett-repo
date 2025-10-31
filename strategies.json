@@ -179,7 +179,7 @@
     "name": "strategy-fix-v1.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "63250640ea1e429a6e4c4f1073ce927041ddec46e3641f9e5f3a453ae314f0b5",
+    "hash": "f84130ae467bbfa6ecb8dcea678ac71dfa6b9b876c6d1c32efcb77a1007909cd",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-fix-v1.txt"
   },
@@ -187,7 +187,7 @@
     "name": "strategy-fix-v2.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "df63b60f9b5b12012691ce6ab78aa4c02627499ad97fb1f2bef12c310b8ec282",
+    "hash": "2fd9b56b401761d8cf1371433d33848b467a563961f1c29ba7ad16398c1e1c72",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-fix-v2.txt"
   },
