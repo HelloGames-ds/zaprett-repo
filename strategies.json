@@ -371,7 +371,7 @@
     "name": "strategy-ultimatefix-alt-v6.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "1d4de4e5244e96e7d66dbc6c8842ed19216d9e900d6c41edc263f689564a64ee",
+    "hash": "6dbd1dbbe37b6485486cc13cef51f49af774c4e94bc8e4552f6ec4b38a8fc6d5",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-ultimatefix-alt-v6.txt"
   },
