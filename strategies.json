@@ -91,7 +91,7 @@
     "name": "strategy-fake-tls-auto-alt3.txt",
     "author": "flowseal",
     "description": "Стратегия fake-tls-auto-alt3 из репозитория zapret для Windows",
-    "hash": "886dc7d5f4a71f5fd4218e7731d04eaba95274f72f4a0f8d67c284907212de99",
+    "hash": "80a6953a0958b1b05ff6035fea32a7072ea5224cd1e0c80ccc5099736dd4a88d",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-fake-tls-auto-alt3.txt"
   },
