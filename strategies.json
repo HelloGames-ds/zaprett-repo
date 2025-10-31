@@ -451,7 +451,7 @@
     "name": "strategy-youtubefix-alt.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "58b5dc17680bc27935a455bc8d662dd38fb05d8a3d78457714470902ca456798",
+    "hash": "7ab3f31fdc94068a77d049b8025ebdda4b5cc2ab370162a0a8fff1ccc909e0af",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-youtubefix-alt.txt"
   }
