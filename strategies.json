@@ -115,7 +115,7 @@
     "name": "strategy-simple-fake-alt.txt",
     "author": "flowseal",
     "description": "Стратегия simple-fake-alt из репозитория zapret для Windows",
-    "hash": "8f938df2045831f7824cd767bfa77344d5b7582d816255b5c6f2f2a000de8c6f",
+    "hash": "b95982bc02c616a1cd63e4d445a35193fe66dc7c3a5a69a8fec99a169aabc646",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-simple-fake-alt.txt"
   },
