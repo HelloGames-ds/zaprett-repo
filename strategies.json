@@ -275,7 +275,7 @@
     "name": "strategy-generalfix-alt.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "d857080fab6225380024582fe5d28649012bfd4d58da4a192ca9e740fa6c9bc0",
+    "hash": "c47e5a083e9e289b77be694b646d5adce5906cdc08e09c7540f08a27441fea1f",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-generalfix-alt.txt"
   },
