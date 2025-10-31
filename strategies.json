@@ -299,7 +299,7 @@
     "name": "strategy-generalfix.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "37d918a735b94d3b573eda6adced550fc938053bff5405f563b62282e8952864",
+    "hash": "7a23d47ceef03e74c5363bd6f2b437ae69540b90f39075ae22bb66eaffbfe438",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-generalfix.txt"
   },
@@ -307,7 +307,7 @@
     "name": "strategy-preset-russia.txt",
     "author": "Snowy-Fluffy",
     "description": "Порт стратегии из репозитория Snowy-Fluffy (портировал HelloGames)",
-    "hash": "77db3c4f4b80d0d1859a8e4cfea28768fe3d49e08dd549435ddbb4c64f5ab9ee",
+    "hash": "42e682b1923182fa11ee11458e8fe2dc08989d78d6f4d5680ab7ef06cae8090c",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/nfqws/strategy-preset-russia.txt"
   },
