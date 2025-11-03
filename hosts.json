@@ -88,6 +88,14 @@
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/lists/exclude/list-exclude-general.txt"
   },
   {
+    "name": "list-exclude-tiktok.txt",
+    "author": "dotFelixan",
+    "description": "Домены TikTok для черного списка",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "type": "list_exclude",
+    "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/lists/exclude/list-exclude-tiktok.txt"
+  },
+  {
     "name": "list-meta-services.txt",
     "author": "@XZY18RUS",
     "description": "Домены Meta (Facebook, Instagram и т.п.)",

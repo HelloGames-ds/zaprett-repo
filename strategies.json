@@ -122,7 +122,39 @@
   {
     "name": "strategy-shizapret-port.txt",
     "author": "sch-izo (Портировал dotFelixan)",
-    "description": "Стратегия shizapret из репозитория sch-izo/shizapret для Windows",
+    "description": "Стратегия shizapret из репозитория sch-izo/shizapret",
+    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "type": "nfqws",
+    "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
+  },
+  {
+    "name": "strategy-shizapret-alt-port.txt",
+    "author": "sch-izo (Портировал dotFelixan)",
+    "description": "Стратегия shizapret из репозитория sch-izo/shizapret",
+    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "type": "nfqws",
+    "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
+  },
+  {
+    "name": "strategy-shizapret-md5sig-port.txt",
+    "author": "sch-izo (Портировал dotFelixan)",
+    "description": "Стратегия shizapret из репозитория sch-izo/shizapret",
+    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "type": "nfqws",
+    "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
+  },
+  {
+    "name": "strategy-shizapret-dot.txt",
+    "author": "sch-izo (Модифицировал dotFelixan)",
+    "description": "Модифицированная стратегия shizapret",
+    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "type": "nfqws",
+    "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
+  },
+  {
+    "name": "strategy-shizapret-dot-alt.txt",
+    "author": "sch-izo (Модифицировал dotFelixan)",
+    "description": "Модифицированная стратегия shizapret",
     "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
