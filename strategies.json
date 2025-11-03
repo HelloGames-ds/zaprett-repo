@@ -123,7 +123,7 @@
     "name": "strategy-shizapret-port.txt",
     "author": "sch-izo (Портировал dotFelixan)",
     "description": "Стратегия shizapret из репозитория sch-izo/shizapret",
-    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "hash": "78c5eeb60d3ac33ffba77cc7fea7621c6e0a8dcf04269a13ad10d21ec4d01632",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
   },
@@ -131,7 +131,7 @@
     "name": "strategy-shizapret-alt-port.txt",
     "author": "sch-izo (Портировал dotFelixan)",
     "description": "Стратегия shizapret из репозитория sch-izo/shizapret",
-    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "hash": "aef0cc99d2faa5ce924f66a7d5e164a541f83290a84a9df5c7cc39c161cf2340",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
   },
@@ -139,7 +139,7 @@
     "name": "strategy-shizapret-md5sig-port.txt",
     "author": "sch-izo (Портировал dotFelixan)",
     "description": "Стратегия shizapret из репозитория sch-izo/shizapret",
-    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "hash": "d363840bb9130609ef2fb31051c829c8fb1d13b5d5c7a3a879f65be20f8c7020",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
   },
@@ -147,7 +147,7 @@
     "name": "strategy-shizapret-dot.txt",
     "author": "sch-izo (Модифицировал dotFelixan)",
     "description": "Модифицированная стратегия shizapret",
-    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "hash": "1673655ac9d45ac73ff07c2c86a5e022d7b79e67a8692b074a882897149f3975",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
   },
@@ -155,7 +155,7 @@
     "name": "strategy-shizapret-dot-alt.txt",
     "author": "sch-izo (Модифицировал dotFelixan)",
     "description": "Модифицированная стратегия shizapret",
-    "hash": "fb83d692c8cc23b1acf6dc1eaa1fb5b5ba2a2bd8247c3ed58e15beae6b242277",
+    "hash": "6bbccf3d1de45c65e8bcd1e50781705a4fad03cd36cc70b408bc86a4f7b50aec",
     "type": "nfqws",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-hosts-repo/main/strategies/nfqws/strategy-shizapret-port.txt"
   },
