@@ -1,0 +1,1 @@
+-H:"googlevideo.com youtu.be ggpht.com ytimg.com ggpht.com googleapis.com googleusercontent.com youtube.com" -o1 -d1 -a1 -An -a2 -f-204 -n google.com -Qr -s1:5+sm -As -d1 -s3+s -s5+s -q7
