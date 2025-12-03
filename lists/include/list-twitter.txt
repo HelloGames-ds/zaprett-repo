@@ -1,5 +1,7 @@
 twitter.com
+x.com
 api.twitter.com
+api.x.com
 www.twitter.com
 api.tweetdeck.com
 t.co
