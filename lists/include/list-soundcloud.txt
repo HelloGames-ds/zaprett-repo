@@ -23,3 +23,7 @@ support.soundcloud.com
 soundcloud.cloud
 pscdn.co
 scdn.co
+eventgateway.soundcloud.com;
+db-prod1-restricted.l.soundcloud.com;
+developers.soundcloud.com;
+api.soundcloud.com.
