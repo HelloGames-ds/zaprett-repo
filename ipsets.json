@@ -6,5 +6,13 @@
     "hash": "106714aed888f39b5f7b5342447a3aca5d06eaeda7b95d9995f0cffdedf696c3",
     "type": "ipset",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/refs/heads/main/ipsets/include/ipset-cloudflare.txt"
+  },
+  {
+    "name": "ipset-roblox.txt",
+    "description": "Ipset Roblox",
+    "author": "@mewmrow",
+    "hash": "9b35fd1eef1cce9ef3fe264f90a904c39b469f43b883a6c509a87039b1d39394",
+    "type": "ipset",
+    "url": "https://github.com/CherretGit/zaprett-repo/raw/refs/heads/main/ipsets/include/ipset-roblox.txt"
   }
 ]
