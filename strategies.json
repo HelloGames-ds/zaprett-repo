@@ -507,7 +507,7 @@
     "name": "strategy-test-speed-1.txt",
     "author": "Владимир",
     "description": "Порт стратегии Владимира (портировал HelloGames_.)",
-    "hash": "f7122efff1feda6a3decfbf58b6935da2e0b5b10ecaa1e19de199691a559bbed",
+    "hash": "400e7c39b50ec3f07ac0d35d074363a0f3c23e1ef5ff75e601059c242c7ab10a",
     "type": "byedpi",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/byedpi/strategy-test-speed-1.txt"
   },
