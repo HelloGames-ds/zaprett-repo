@@ -531,7 +531,7 @@
     "name": "strategy-ds.txt",
     "author": "Crazry Chel",
     "description": "Порт стратегии Crazy Chel (портировал HelloGames_.)",
-    "hash": "2a02beb1b1c652db9e401af65b4e81f863ff4af24b53c9c1b859df7f971b7b92",
+    "hash": "349fe59fbcfc4c40455a292f01c029e7bfe4c9342e711990158a4e7ed2498129",
     "type": "byedpi",
     "url": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/main/strategies/byedpi/strategy-ds.txt"
   },
