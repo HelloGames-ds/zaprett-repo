@@ -2,9 +2,9 @@
   "schema": 1,
   "id": "nfqws2-alt",
   "name": "nfqws2-alt",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "HelloGames-ds",
-  "description": "Полный набор профилей nfqws2 без fooling: распил через перекрытие по sequence (seqovl) на multisplit/fakedsplit/multidisorder. Telegram/WhatsApp/Discord WebRTC, Discord, QUIC, YouTube, WARP, WireGuard, hostlist/ipset",
+  "description": "Порт strategy-alt на nfqws2: seqovl без fooling",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
@@ -13,6 +13,6 @@
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-alt.txt",
-    "sha256": "c9eba08a0c4b2f1d31872615926f165e2d798cd1ee82c1f07830094ad56c02fe"
+    "sha256": "78c02cb94333aeb6dadecd5e0b74100aafe2767f5e64e8a757b26bb0bef722d0"
   }
 }

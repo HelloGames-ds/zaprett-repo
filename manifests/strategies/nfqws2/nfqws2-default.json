@@ -2,9 +2,9 @@
   "schema": 1,
   "id": "nfqws2-default",
   "name": "nfqws2-default",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "HelloGames-ds",
-  "description": "Полный набор профилей nfqws2: Telegram/WhatsApp/Discord WebRTC, Discord + gateway, QUIC, YouTube, Cloudflare WARP, WireGuard, hostlist и ipset. Умеренная техника: fake + fakedsplit/multidisorder, autottl+tcp_md5",
+  "description": "Порт strategy-shizapret-dot на nfqws2: умеренный fake+split",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
@@ -13,6 +13,6 @@
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-default.txt",
-    "sha256": "3299e6c10f9612d9e70ac37604e09c8efb1ec74d15fb6e285d655f4857f12af8"
+    "sha256": "712edb84661fdbf346a0c3451fb5f042fe873e3ccc6de0062cb80617b5f94217"
   }
 }

@@ -550,6 +550,31 @@
       "id": "nfqws2-auto",
       "type": "nfqws2",
       "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/nfqws2-auto.json"
+    },
+    {
+      "id": "nfqws2-soft",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/nfqws2-soft.json"
+    },
+    {
+      "id": "nfqws2-md5",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/nfqws2-md5.json"
+    },
+    {
+      "id": "nfqws2-hostfake",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/nfqws2-hostfake.json"
+    },
+    {
+      "id": "nfqws2-oob",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/nfqws2-oob.json"
+    },
+    {
+      "id": "nfqws2-aggressive",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/nfqws2-aggressive.json"
     }
   ]
 }

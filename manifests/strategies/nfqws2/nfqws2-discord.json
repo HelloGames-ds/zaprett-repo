@@ -2,9 +2,9 @@
   "schema": 1,
   "id": "nfqws2-discord",
   "name": "nfqws2-discord",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "HelloGames-ds",
-  "description": "Discord-ориентированная стратегия nfqws2 (голос, gateway, медиа, QUIC) плюс полный набор профилей: Telegram/WhatsApp WebRTC, QUIC, YouTube, Cloudflare WARP, WireGuard, hostlist/ipset",
+  "description": "Порт strategy-shizapret-dot с уклоном в Discord",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
@@ -13,6 +13,6 @@
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-discord.txt",
-    "sha256": "fcdd817996965f93bd5815128f71fff25f7880716837624cfaabc0b8d8d86c63"
+    "sha256": "d53e93b1a693238307ba5bebf51bf77d90edf9ea6190013092f424a25a2111ae"
   }
 }
