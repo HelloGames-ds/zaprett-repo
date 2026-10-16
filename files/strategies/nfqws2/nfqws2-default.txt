@@ -10,7 +10,7 @@
 --comment=Cloudflare WARP --filter-tcp=443,853 --ipset-ip=162.159.36.1,162.159.46.1,2606:4700:4700::1111,2606:4700:4700::1001 --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=fake_default_tls:tcp_seq=2:repeats=3 --new
 --comment=WireGuard --filter-udp=0-65535 --filter-l7=wireguard --out-range=-n3 --payload=wireguard_initiation,wireguard_cookie --lua-desync=syndata --lua-desync=fake:blob=0x01:repeats=3 --new
 --comment=TCP80 hostlists --filter-tcp=80 ${hostlists} --out-range=-d10 --payload=http_req --lua-desync=fake:blob=fake_default_http:repeats=6 --lua-desync=fakedsplit --new
---comment=TCP443 hostlists --filter-tcp=443 ${hostlists} --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=fake_default_tls:tcp_md5:repeats=11:tls_mod=rnd,dupsid,sni=www.google.com --lua-desync=multidisorder:pos=1,midsld --new
+--comment=TCP443 hostlists --filter-tcp=443 ${hostlists} --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=fake_default_tls:repeats=11:tls_mod=rnd,dupsid,sni=www.google.com --lua-desync=multidisorder:pos=1,midsld --new
 --comment=ipset TCP80 --filter-tcp=80 ${ipsets} --out-range=-d10 --payload=http_req --lua-desync=fake:blob=fake_default_http:repeats=4 --new
 --comment=ipset TCP443 --filter-tcp=443 ${ipsets} --out-range=-d10 --payload=tls_client_hello --lua-desync=multidisorder:pos=1,midsld --new
 --comment=ipset UDP443 --filter-udp=443 ${ipsets} --payload=quic_initial --lua-desync=fake:blob=quic_google:repeats=4
