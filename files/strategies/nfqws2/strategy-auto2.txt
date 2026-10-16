@@ -1,0 +1,12 @@
+--comment=zapret2 auto rotation --lua-init=@${lua_lib:zapret-lib} --lua-init=@${lua_lib:zapret-antidpi} --lua-init=@${lua_lib:zapret-auto} --blob=zero4:0x00000000
+--comment=TLS443 rotate --filter-tcp=443 --filter-l7=tls ${hostlists} --out-range=-d10 --payload=tls_client_hello --lua-desync=circular:fails=4:retrans=2:maxseq=16384
+--lua-desync=fake:blob=fake_default_tls:tcp_md5:repeats=6:strategy=1
+--lua-desync=multisplit:pos=1,midsld:seqovl=5:seqovl_pattern=zero4:strategy=1
+--lua-desync=fake:blob=fake_default_tls:tcp_md5:repeats=6:strategy=2
+--lua-desync=multidisorder:pos=1,midsld:strategy=2
+--lua-desync=fakedsplit:pos=midsld:strategy=3:final --new
+--comment=HTTP80 rotate --filter-tcp=80 --filter-l7=http ${hostlists} --out-range=-d10 --payload=http_req --lua-desync=circular:fails=4:retrans=2:maxseq=16384
+--lua-desync=fake:blob=fake_default_http:tcp_md5:repeats=4:strategy=1
+--lua-desync=multisplit:pos=2,host+1:seqovl=5:seqovl_pattern=zero4:strategy=2
+--lua-desync=fakedsplit:pos=2,host+1:strategy=3:final --new
+--comment=QUIC443UDP --filter-udp=443 --filter-l7=quic ${hostlists} --payload=quic_initial --lua-desync=fake:blob=fake_default_quic:repeats=6

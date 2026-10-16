@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "zapret-lib",
+  "name": "zapret-lib",
+  "version": "1.0.0",
+  "author": "bol-van",
+  "description": "Lua-библиотека nfqws2: базовые функции. Должна загружаться первой",
+  "dependencies": [],
+  "artifact": {
+    "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/lua/zapret-lib.lua",
+    "sha256": "a33b5886603ee8181772798b2708e7ffa08da54cd2df39a965fac3abc5d3af9c"
+  }
+}

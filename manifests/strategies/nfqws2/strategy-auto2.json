@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "strategy-auto2",
+  "name": "strategy-auto2",
+  "version": "1.0.0",
+  "author": "zaprett-devs",
+  "description": "Стратегия nfqws2 с автоматической ротацией circular: перебор fake/split вариантов по хостам",
+  "dependencies": [
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-auto.json"
+  ],
+  "artifact": {
+    "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/strategy-auto2.txt",
+    "sha256": "781dc163d0c4bf5a10e2672c22fb0a511e06d91f25c2aaadc08d60b4073524da"
+  }
+}
