@@ -2,16 +2,17 @@
   "schema": 1,
   "id": "nfqws2-discord",
   "name": "nfqws2-discord",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "HelloGames-ds",
-  "description": "Стратегия nfqws2 для Discord: голос (STUN/Discord media), gateway 443 и 2053-8443, QUIC",
+  "description": "Discord-ориентированная стратегия nfqws2 (голос, gateway, медиа, QUIC) плюс полный набор профилей: Telegram/WhatsApp WebRTC, QUIC, YouTube, Cloudflare WARP, WireGuard, hostlist/ipset",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
-    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/tls_clienthello_www_google_com.json"
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/tls_clienthello_www_google_com.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/quic_initial_www_google_com.json"
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-discord.txt",
-    "sha256": "ce9dd08931fcee11169f8fdef0eb11fb535849171279f8a926d9e2833077adb6"
+    "sha256": "fcdd817996965f93bd5815128f71fff25f7880716837624cfaabc0b8d8d86c63"
   }
 }

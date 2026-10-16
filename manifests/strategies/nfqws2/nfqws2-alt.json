@@ -2,16 +2,17 @@
   "schema": 1,
   "id": "nfqws2-alt",
   "name": "nfqws2-alt",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "HelloGames-ds",
-  "description": "Стратегия nfqws2 с seqovl: fakedsplit/multisplit с перекрытием по sequence, TLS fake с tls_mod",
+  "description": "Полный набор профилей nfqws2 без fooling: распил через перекрытие по sequence (seqovl) на multisplit/fakedsplit/multidisorder. Telegram/WhatsApp/Discord WebRTC, Discord, QUIC, YouTube, WARP, WireGuard, hostlist/ipset",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
-    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/tls_clienthello_www_google_com.json"
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/tls_clienthello_www_google_com.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/quic_initial_www_google_com.json"
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-alt.txt",
-    "sha256": "7a91880d65367c64e7f06da5a4a1585a61453cf4c09b179015d6ab48288a2f72"
+    "sha256": "c9eba08a0c4b2f1d31872615926f165e2d798cd1ee82c1f07830094ad56c02fe"
   }
 }

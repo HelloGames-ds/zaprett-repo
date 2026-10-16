@@ -2,16 +2,18 @@
   "schema": 1,
   "id": "nfqws2-auto",
   "name": "nfqws2-auto",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "HelloGames-ds",
-  "description": "Стратегия nfqws2 с автоматической ротацией circular: перебор fake/split вариантов по хостам",
+  "description": "Полный набор профилей nfqws2 с автоматической ротацией circular: при неудаче стратегии перебираются по хостам. Telegram/WhatsApp/Discord WebRTC, Discord, QUIC, YouTube, WARP, WireGuard, hostlist/ipset",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
-    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-auto.json"
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-auto.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/tls_clienthello_www_google_com.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/quic_initial_www_google_com.json"
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-auto.txt",
-    "sha256": "781dc163d0c4bf5a10e2672c22fb0a511e06d91f25c2aaadc08d60b4073524da"
+    "sha256": "cb6f27aef81de310b1241f8e3490e2b059755557d2f5006543843e050761b23a"
   }
 }
