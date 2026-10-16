@@ -3,7 +3,7 @@
   "id": "strategy-discord2",
   "name": "strategy-discord2",
   "version": "1.0.0",
-  "author": "zaprett-devs",
+  "author": "HelloGames-ds",
   "description": "Стратегия nfqws2 для Discord: голос (STUN/Discord media), gateway 443 и 2053-8443, QUIC",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",

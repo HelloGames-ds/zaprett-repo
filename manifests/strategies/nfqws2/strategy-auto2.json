@@ -3,7 +3,7 @@
   "id": "strategy-auto2",
   "name": "strategy-auto2",
   "version": "1.0.0",
-  "author": "zaprett-devs",
+  "author": "HelloGames-ds",
   "description": "Стратегия nfqws2 с автоматической ротацией circular: перебор fake/split вариантов по хостам",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",

@@ -3,7 +3,7 @@
   "id": "strategy-alt2",
   "name": "strategy-alt2",
   "version": "1.0.0",
-  "author": "zaprett-devs",
+  "author": "HelloGames-ds",
   "description": "Стратегия nfqws2 с seqovl: fakedsplit/multisplit с перекрытием по sequence, TLS fake с tls_mod",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",

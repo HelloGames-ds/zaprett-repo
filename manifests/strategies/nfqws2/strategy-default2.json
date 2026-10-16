@@ -3,7 +3,7 @@
   "id": "strategy-default2",
   "name": "strategy-default2",
   "version": "1.0.0",
-  "author": "zaprett-devs",
+  "author": "HelloGames-ds",
   "description": "Общая стратегия nfqws2: HTTP fake+fakedsplit, TLS fake+multidisorder, QUIC fake",
   "dependencies": [
     "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
