@@ -1,0 +1,4 @@
+--comment=zapret2 general --lua-init=@${lua_lib:zapret-lib} --lua-init=@${lua_lib:zapret-antidpi}
+--comment=HTTP80 --filter-tcp=80 --filter-l7=http ${hostlists} --out-range=-d10 --payload=http_req --lua-desync=fake:blob=fake_default_http:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:tcp_md5 --lua-desync=fakedsplit:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:tcp_md5 --new
+--comment=TLS443 --filter-tcp=443 --filter-l7=tls ${hostlists} --out-range=-d10 --payload=tls_client_hello --lua-desync=fake:blob=fake_default_tls:tcp_md5:repeats=11:tls_mod=rnd,dupsid,sni=www.google.com --lua-desync=multidisorder:pos=1,midsld --new
+--comment=QUIC443UDP --filter-udp=443 --filter-l7=quic ${hostlists} --payload=quic_initial --lua-desync=fake:blob=fake_default_quic:repeats=11

@@ -510,6 +510,46 @@
       "id": "strategy-yt-new-fix",
       "type": "byedpi",
       "manifest": "https://raw.githubusercontent.com/CherretGit/zaprett-repo/refs/heads/main/manifests/strategies/byedpi/strategy-yt-new-fix.json"
+    },
+    {
+      "id": "zapret-lib",
+      "type": "lua_lib",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json"
+    },
+    {
+      "id": "zapret-antidpi",
+      "type": "lua_lib",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json"
+    },
+    {
+      "id": "zapret-auto",
+      "type": "lua_lib",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-auto.json"
+    },
+    {
+      "id": "zapret-obfs",
+      "type": "lua_lib",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-obfs.json"
+    },
+    {
+      "id": "strategy-default2",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/strategy-default2.json"
+    },
+    {
+      "id": "strategy-alt2",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/strategy-alt2.json"
+    },
+    {
+      "id": "strategy-discord2",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/strategy-discord2.json"
+    },
+    {
+      "id": "strategy-auto2",
+      "type": "nfqws2",
+      "manifest": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/strategies/nfqws2/strategy-auto2.json"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "zapret-auto",
+  "name": "zapret-auto",
+  "version": "1.0.0",
+  "author": "bol-van",
+  "description": "Lua-библиотека nfqws2: оркестраторы, circular - автоматическая ротация стратегий",
+  "dependencies": [
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json"
+  ],
+  "artifact": {
+    "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/lua/zapret-auto.lua",
+    "sha256": "c2028f544134b0dec33f054ac54fe4f2315d969ba034601456f72017fd5f8528"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "strategy-alt2",
+  "name": "strategy-alt2",
+  "version": "1.0.0",
+  "author": "zaprett-devs",
+  "description": "Стратегия nfqws2 с seqovl: fakedsplit/multisplit с перекрытием по sequence, TLS fake с tls_mod",
+  "dependencies": [
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-lib.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/lua/zapret-antidpi.json",
+    "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/manifests/bin/tls_clienthello_www_google_com.json"
+  ],
+  "artifact": {
+    "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/strategy-alt2.txt",
+    "sha256": "7a91880d65367c64e7f06da5a4a1585a61453cf4c09b179015d6ab48288a2f72"
+  }
+}
