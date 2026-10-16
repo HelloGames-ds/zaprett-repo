@@ -1,4 +1,4 @@
-NFQWS2_COMPAT_VER_REQUIRED=6
+NFQWS2_COMPAT_VER_REQUIRED=5
 
 if NFQWS2_COMPAT_VER~=NFQWS2_COMPAT_VER_REQUIRED then
 	error("Incompatible NFQWS2_COMPAT_VER. Use pktws and lua scripts from the same release !")
@@ -24,16 +24,15 @@ function luaexec(ctx, desync)
 		_G[fname], err = load(desync.arg.code, fname)
 		if not _G[fname] then
 			error(err)
+			return
 		end
 	end
 	-- allow dynamic code to access desync
 	_G.desync = desync
-	local res, ret = pcall(_G[fname])
+	local res, err = pcall(_G[fname])
 	_G.desync = nil
 	if not res then
-		error(ret)
-	else
-		return ret or VERDICT_PASS -- older nfqws2 failed if desync function returned explicit nil
+		error(err);
 	end
 end
 
@@ -551,7 +550,7 @@ function blob(desync, name, def)
 			-- use global var if no field in dissect table
 			blob = _G[name]
 			if not blob then
-				error("blob '"..name.."' unavailable")
+				error("blob  '"..name.."' unavailable")
 			end
 		end
 		blob = tostring(blob)
@@ -761,63 +760,6 @@ function fix_ip6_next(ip6, last_proto)
 		ip6.ip6_nxt = last_proto or IPPROTO_NONE
 	end
 end
-
-function dis_ipsrc(dis)
-	if dis.ip then
-		return dis.ip.ip_src
-	elseif dis.ip6 then
-		return dis.ip6.ip6_src
-	end
-end
-function dis_ipdst(dis)
-	if dis.ip then
-		return dis.ip.ip_dst
-	elseif dis.ip6 then
-		return dis.ip6.ip6_dst
-	end
-end
-
-function dis_l4_name(dis)
-	local l4
-	if dis.tcp then
-		l4="tcp"
-	elseif dis.udp then
-		l4="udp"
-	elseif dis.icmp then
-		l4="icmp"
-	else
-		l4="raw"..ip_proto_l3(dis)
-	end
-	return l4
-end
-function dis_l4_ports(dis)
-	local p1,p2
-	if dis.tcp then
-		p1=dis.tcp.th_sport
-		p2=dis.tcp.th_dport
-	elseif dis.udp then
-		p1=dis.udp.uh_sport
-		p2=dis.udp.uh_dport
-	elseif dis.icmp then
-		p1=dis.icmp.icmp_type
-		p2=dis.icmp.icmp_code
-	end
-	return p1 and (p1..":"..p2) or "?"
-end
-
-function dis_timer_name(dis)
-	return table.concat({ntop(dis_ipsrc(dis)),"->",ntop(dis_ipdst(dis)),"_",dis_l4_name(dis),"_",dis_l4_ports(dis)})
-end
-function desync_timer_name(desync)
-	local name = desync.func_instance.."_"..dis_timer_name(desync.dis)
-	if desync.track then
-		name = name.."_n"..desync.track.pos.direct.pcounter
-	else
-		name = name.."_"..brandom_az09(10)
-	end
-	return name
-end
-
 
 -- reverses ip addresses, ports and seq/ack
 function dis_reverse(dis)
@@ -1251,9 +1193,7 @@ function rawsend_dissect_segmented(desync, dis, mss, options)
 				len = #payload - pos + 1
 				if len > max_data then len = max_data end
 				if oob then
-					if urp==0 and pos==1 then
-						discopy.tcp.th_flags = bitor(discopy.tcp.th_flags, TH_URG)
-					elseif urp>=pos and urp<(pos+len) then
+					if urp>=pos and urp<(pos+len)then
 						discopy.tcp.th_flags = bitor(discopy.tcp.th_flags, TH_URG)
 						discopy.tcp.th_urp = urp-pos+1
 					else
@@ -1290,7 +1230,7 @@ function rawsend_payload_segmented(desync, payload, seq, options)
 end
 
 
--- check if desync.outgoing complies with arg.dir or def if it's not present or "out" if they are not present both. dir can be "in","out","any"
+-- check if desync.outgoing comply with arg.dir or def if it's not present or "out" of they are not present both. dir can be "in","out","any"
 function direction_check(desync, def)
 	local dir = desync.arg.dir or def or "out"
 	return desync.outgoing and dir~="in" or not desync.outgoing and dir~="out"
@@ -1314,7 +1254,7 @@ function payload_match_filter(l7payload, l7payload_filter, def)
 	local pl = neg and string.sub(argpl,2) or argpl
 	return neg ~= (in_list(pl, "all") or in_list(pl, l7payload) or in_list(pl, "known") and l7payload~="unknown" and l7payload~="empty")
 end
--- check if desync payload type complies with payload type list in arg.payload
+-- check if desync payload type comply with payload type list in arg.payload
 -- if arg.payload is not present - check for known payload - not empty and not unknown (nfqws1 behavior without "--desync-any-protocol" option)
 -- if arg.payload is prefixed with '~' - it means negation
 function payload_check(desync, def)
@@ -1436,9 +1376,9 @@ end
 function append_path(path,file)
 	return string.sub(path,#path,#path)=='/' and path..file or path.."/"..file
 end
-function writable_file_name(filename)
+function writeable_file_name(filename)
 	if is_absolute_path(filename) then return filename end
-	local writedir = os.getenv("WRITABLE")
+	local writedir = os.getenv("WRITEABLE")
 	if not writedir then return filename end
 	return append_path(writedir, filename)
 end
@@ -1608,11 +1548,7 @@ function tls_client_hello_mod(tls, options)
 	end
 	local idx_sni
 	if options.sni_snt or options.sni_del_ext or options.sni_del or options.sni_first or options.sni_last then
-		if tdis.handshake[TLS_HANDSHAKE_TYPE_CLIENT].dis.ext then
-			idx_sni = array_field_search(tdis.handshake[TLS_HANDSHAKE_TYPE_CLIENT].dis.ext, "type", TLS_EXT_SERVER_NAME)
-		else
-			tdis.handshake[TLS_HANDSHAKE_TYPE_CLIENT].dis.ext={}
-		end
+		idx_sni = array_field_search(tdis.handshake[TLS_HANDSHAKE_TYPE_CLIENT].dis.ext, "type", TLS_EXT_SERVER_NAME)
 		if not idx_sni then
 			DLOG("tls_client_hello_mod: no SNI extension. adding")
 			table.insert(tdis.handshake[TLS_HANDSHAKE_TYPE_CLIENT].dis.ext, 1, { type = TLS_EXT_SERVER_NAME, dis = { list = {} } } )
@@ -1754,7 +1690,6 @@ function writefile(filename, data)
 	end
 end
 
-
 -- DISSECTORS
 
 function http_dissect_header(header)
@@ -1863,7 +1798,7 @@ function dissect_url(url)
 		creds = string.sub(url,p1,pend-1)
 		p1 = pend+1
 	end
-	pstart,pend = string.find(url,"[/?#]",p1)
+	pstart,pend = string.find(url,"/",p1,true)
 	if pend then
 		if pend==pb then
 			uri = string.sub(url,pb)
@@ -2281,32 +2216,21 @@ function quic_tvb(data, offset)
 		return bitand(u32(data,offset),0x3FFFFFFF), 4
 	elseif size==3 then
 		if (offset+7)>#data then return end
-		-- only lua 5.3+ has 64-bit integer type. others can't store 64-bit integers. return raw string if the value cannot fit.
-		local msb = bitand(u32(data,offset),0x3FFFFFFF)
-		-- lua 5.3+ has math.type function, older lua and luajit - don't
-		if math.type==nil and msb>0x1FFFFF then
-			return string.sub(data,offset,offset+7), 8
-		else
-			return msb * 0x100000000 + u32(data,offset+4), 8
-		end
+		-- only lua 5.3+ can handle this. others can't store 64-bit integers
+		return bitand(u32(data,offset),0x3FFFFFFF) * 0x100000000 + u32(data,offset+4), 8
 	end
 end
 -- quic-style tvb reconstruct
 function bquic_tvb(v)
-	if type(v)=="string" then
-		-- raw string. do not do anything, just return it
-		return v
-	else
-		if v<0x40 then
-			return bu8(v)
-		elseif v<0x4000 then
-			return bu16(v + 0x4000)
-		elseif v<0x40000000 then
-			return bu32(v + 0x80000000)
-		elseif v<0x4000000000000000 then
-			-- only lua 5.3+ can handle 64-bit int !
-			return bu32(divint(v, 0x100000000) + 0xC0000000) .. bu32(v % 0x100000000)
-		end
+	if v<0x40 then
+		return bu8(v)
+	elseif v<0x4000 then
+		return bu16(v + 0x4000)
+	elseif v<0x40000000 then
+		return bu32(v + 0x80000000)
+	elseif v<0x4000000000000000 then
+		-- only lua 5.3+ can handle 64-bit int !
+		return bu32(divint(v, 0x100000000) + 0xC0000000) .. bu32(v % 0x100000000)
 	end
 end
 
@@ -2401,7 +2325,7 @@ function tls_dissect_ext(ext)
 		left, off = len16_header()
 		if not left then return end
 		dis.list = {}
-		while left>=4 do
+		while left>=1 do
 			len = u16(ext.data, off + 2)
 			if (len+4)>left then return end
 			dis.list[#dis.list+1] = { group = u16(ext.data, off) , kex = string.sub(ext.data, off+4, off+4+len-1) }
@@ -2430,7 +2354,7 @@ function tls_dissect_ext(ext)
 			off = off + size
 			left = left - size
 			len, size = quic_tvb(ext.data, off)
-			if type(len)~="number" then return end
+			if not len then return end
 			off = off + size
 			left = left - size
 			if len > left then return end
@@ -2457,7 +2381,7 @@ function tls_dissect_handshake(handshake, partialOK)
 		handshake.dis = { type = typ , ver = u16(handshake.data, 5), name = tostring(TLS_HANDSHAKE_TYPE_NAMES[typ]) }
 
 		-- random
-		if hlen<38 then return partialOK end
+		if hlen<36 then return partialOK end
 		handshake.dis.random = string.sub(handshake.data, 7, 38)
 
 		-- session_id
@@ -2665,10 +2589,8 @@ function tls_reconstruct_handshake(handshake)
 					end
 					exts = exts .. bu16(handshake.dis.ext[i].type) .. bu16(#handshake.dis.ext[i].data) .. handshake.dis.ext[i].data
 				end
-				handshake.data = bu8(handshake.type) .. bu24(#header + 2 + #exts) .. header .. bu16(#exts) .. exts
-			else
-				handshake.data = bu8(handshake.type) .. bu24(#header) .. header
 			end
+			handshake.data = bu8(handshake.type) .. bu24(#header + 2 + #exts) .. header .. bu16(#exts) .. exts
 		end
 	end
 
@@ -2719,10 +2641,11 @@ function tls_reconstruct(tdis)
 			if not rec.data then return nil end
 		end
 		tls = barray(tdis.rec, function(a) return (#a.data > 0) and (bu8(a.type) .. bu16(a.ver) .. bu16(#a.data) .. a.data) or "" end)
-	elseif tdis.handshake then
-		local i = next(tdis.handshake)
-		if i~=nil then
-			tls = tdis.handshake[i].data
+	elseif tdis.handshake and #tdis.handshake==1 then
+		-- without record layer
+		for k,handshake in pairs(tdis.handshake) do
+			tls = handshake.data
+			break
 		end
 	end
 

@@ -420,6 +420,7 @@ function cond_lua(desync)
 		_G[fname], err = load(desync.arg.cond_code, fname)
 		if not _G[fname] then
 			error(err)
+			return
 		end
 	end
 	-- allow dynamic cond_code to access desync
@@ -462,7 +463,7 @@ function condition(ctx, desync)
 	return replay_execution_plan(desync)
 end
 -- execute further desync instances.
--- each instance must have "cond" arg and may optionally have "cond_neg" arg.
+-- each instance may have "cond" and "cond_neg" args.
 -- "cond" - condition function.  "neg" - invert condition function result
 -- arg: instances - how many instances execute conditionally. all if not defined
 function per_instance_condition(ctx, desync)
