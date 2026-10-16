@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "nfqws2-default",
   "name": "nfqws2-default",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": "HelloGames-ds",
   "description": "Порт strategy-shizapret-dot на nfqws2: умеренный fake+split",
   "dependencies": [
@@ -13,6 +13,6 @@
   ],
   "artifact": {
     "url": "https://raw.githubusercontent.com/HelloGames-ds/zaprett-repo/refs/heads/main/files/strategies/nfqws2/nfqws2-default.txt",
-    "sha256": "712edb84661fdbf346a0c3451fb5f042fe873e3ccc6de0062cb80617b5f94217"
+    "sha256": "d499d51bff6eefa1564f3fd718d538cc8967386f9ef2d602507417c8c5eceb30"
   }
 }
